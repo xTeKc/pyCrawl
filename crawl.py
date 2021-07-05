@@ -1,5 +1,6 @@
 import requests
 
+# url to crawl 
 url = "notAwebpage.duckduckgo.com"
 try:
     get_response = requests.get("https://" + url)
