@@ -1,5 +1,8 @@
 import requests
 
 url = "duckduckgo.com"
-get_response = requests.get("https://" + url)
-print(get_response)
+try:
+    get_response = requests.get("https://" + url)
+    print(get_response)
+except requests.exceptions.ConnectionError:
+    pass
